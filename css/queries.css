@@ -1,0 +1,121 @@
+/* 980px */
+@media only screen and (max-width: 61.25em) {
+  .mobile-image-box {
+    display: block;
+
+    grid-column: center-start / col-end 2;
+    grid-row: 1 / 6;
+  }
+
+  .desktop-image-box {
+    display: none;
+  }
+}
+
+/* 753.6px */
+@media only screen and (max-width: 47.1em) {
+  .major-article__heading-primary {
+    margin-bottom: 1.8rem;
+    line-height: 1.1;
+  }
+  .major-article__col-2 {
+    margin-left: 0;
+  }
+}
+
+/* 700px = 50em*/
+@media only screen and (max-width: 43.75em) {
+  .mobile-image-box {
+    display: block;
+
+    grid-column: center-start / center-end;
+    grid-row: 1 / 6;
+  }
+  .sidebar {
+    grid-column: center-start / center-end;
+    grid-row: 8/9;
+    margin-left: 0;
+  }
+
+  .major-article {
+    grid-column: center-start / center-end;
+  }
+
+  .major-article__box {
+    grid-template-columns: 1fr;
+    margin-bottom: 6.2rem;
+  }
+
+  .top-article {
+    grid-row: 9 / 12;
+  }
+
+  .top-article__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .top-article__list-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 525px */
+@media only screen and (max-width: 32.8em) {
+  .nav {
+    padding-top: 2rem;
+  }
+
+  .nav__container {
+    background-color: rgb(255, 255, 251);
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    color: hsl(240, 100%, 5%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(100%);
+    transition: all 400ms;
+       z-index: -1;
+  }
+
+  .nav-open .nav__container {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0%);
+    z-index: 2;
+  }
+
+  .nav__list-box {
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 2rem;
+    font-weight: 400;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-open .btn-mobile-nav__open {
+    display: none;
+  }
+
+  .nav-open .btn-mobile-nav__close {
+    display: block;
+  }
+
+  .transparent-mobile-bg {
+    background-color: var(--very-dark-blue);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    transition: all 2.2s;
+  }
+}

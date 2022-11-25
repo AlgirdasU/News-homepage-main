@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Main news homepage" />
 
     <link
       rel="icon"
@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
 
     <title>Frontend Mentor | News homepage</title>
   </head>
@@ -24,32 +25,47 @@
     <div class="container">
       <header class="header-container">
         <nav class="nav">
-          <!-- <div class="nav__container"> -->
-          <a href="#Link to the home page" class="nav__logo-link-box">
+          <a
+            href="#Link to the home page"
+            aria-label="brand-logo"
+            class="nav__logo-link-box"
+          >
             <svg class="nav__logo">
               <use xLink:href="../images/sprite.svg#logo"></use>
             </svg>
           </a>
 
-          <ul class="nav__list-box">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">New</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Popular</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Trending</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Categories</a>
-            </li>
-          </ul>
-          <!-- </div> -->
+          <div class="nav__container">
+            <ul class="nav__list-box">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">New</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Popular</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Trending</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Categories</a>
+              </li>
+            </ul>
+          </div>
+          <!-- MENU BTN -->
+          <div class="btn-mobile-nav">
+            <svg class="btn-mobile-nav__open">
+              <use xLink:href="../images/sprite.svg#icon-menu"></use>
+            </svg>
+
+            <svg class="btn-mobile-nav__close">
+              <use xLink:href="../images/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </div>
         </nav>
+        <div class="mobile-bg"></div>
       </header>
 
       <main class="main-container">
@@ -61,10 +77,17 @@
               class="desktop-image"
             />
           </div>
+          <div class="mobile-image-box">
+            <img
+              src="../images/image-web-3-mobile.jpg"
+              alt="Colorful wooden lego tiles"
+              class="desktop-image"
+            />
+          </div>
 
           <article class="major-article">
             <div class="major-article__box">
-              <h1 class="amajor-article__heading-primary">
+              <h1 class="major-article__heading-primary">
                 The Bright Future of Web 3.0?
               </h1>
               <div class="major-article__col-2">
@@ -136,10 +159,10 @@
                     <h4 class="top-article__heading-quarterly">
                       Reviving Retro PCs
                     </h4>
-                    <p class="top-article__paragraph">
-                      What happens when old PCs are given modern upgrades?
-                    </p>
                   </a>
+                  <p class="top-article__paragraph">
+                    What happens when old PCs are given modern upgrades?
+                  </p>
                 </article>
               </li>
               <li class="top-article__item">
@@ -156,10 +179,10 @@
                     <h4 class="top-article__heading-quarterly">
                       Top 10 Laptops of 2022
                     </h4>
-                    <p class="top-article__paragraph">
-                      Our best picks for various needs and budgets.
-                    </p>
                   </a>
+                  <p class="top-article__paragraph">
+                    Our best picks for various needs and budgets.
+                  </p>
                 </article>
               </li>
               <li class="top-article__item">
@@ -176,10 +199,10 @@
                     <h4 class="top-article__heading-quarterly">
                       The Growth of Gaming
                     </h4>
-                    <p class="top-article__paragraph">
-                      How the pandemic has sparked fresh opportunities.
-                    </p>
                   </a>
+                  <p class="top-article__paragraph">
+                    How the pandemic has sparked fresh opportunities.
+                  </p>
                 </article>
               </li>
             </ul>
@@ -189,10 +212,18 @@
 
       <footer>
         <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          <p class="attribution__content">
+            <span>Challenge by</span>
+
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            ><span>. Coded by </span
+            ><a href="https://github.com/AlgirdasU/News-homepage-main"
+              >Algirdas</a
+            >.
+          </p>
         </div>
       </footer>
     </div>
