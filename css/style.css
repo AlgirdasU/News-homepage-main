@@ -210,6 +210,7 @@ body {
 .top-article__img-box a img {
   max-width: 9rem;
   height: auto;
+  display: block;
 }
 .top-article__box {
   margin-top: -1rem;
@@ -242,7 +243,7 @@ body {
   background-color: var(--very-dark-blue);
   padding: 2rem 2rem;
   margin-left: 2.8rem;
-  margin-left: 2vw;
+  margin-left: 2rem;
 }
 .sidebar__heading-secondary {
   color: var(--soft-orange);

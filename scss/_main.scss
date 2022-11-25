@@ -206,6 +206,7 @@ body {
     a img {
       max-width: 9rem;
       height: auto;
+      display: block;
     }
   }
 
@@ -246,7 +247,7 @@ body {
   background-color: var(--very-dark-blue);
   padding: 2rem 2rem;
   margin-left: 2.8rem;
-  margin-left: 2vw;
+  margin-left: 2rem;
 
   &__heading-secondary {
     color: var(--soft-orange);
