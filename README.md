@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/AlgirdasU/News-homepage-main)
-- Live Site URL: (https://shimmering-paprenjak-c91947.netlify.app)
+- Live Site URL: (https://stalwart-sundae-969b65.netlify.app)
 ## My process
 
 ### Built with
